@@ -19,22 +19,22 @@ Start reading the documentation with the [Table of Contents](doc/contents.md).
 LANGUAGES
 ---------
 
-  JSON
+  JSON  
   http://json.org/
 
-  Markdown
-  http://daringfireball.net/projects/markdown/
+  Markdown  
+  http://daringfireball.net/projects/markdown/  
   http://github.github.com/github-flavored-markdown/
 
 AUTHOR
 ------
 
-  Eric Bréchemier
+  Eric Bréchemier  
   http://eric.brechemier.name
 
   for
 
-  PeekBehind.com
+  PeekBehind.com  
   http://peekbehind.com
 
 LICENSE
