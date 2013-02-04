@@ -41,6 +41,6 @@ LICENSE
 -------
 
   * [MIT License][MIT] for the code and documentation  
-    <LICENSE.txt>
+    [LICENSE.txt](LICENSE.txt)
 
   [MIT]: http://en.wikipedia.org/wiki/MIT_License "MIT License on Wikipedia"
