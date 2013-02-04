@@ -14,7 +14,7 @@ the [ghost recorder][RECORDER] and the [ghost player][PLAYER].
 FIRST STEPS
 -----------
 
-Start reading the documentation with the [Table of Contents](doc/contents.md).
+Start reading the documentation with the [Table of Contents](contents.md).
 
 LANGUAGES
 ---------
