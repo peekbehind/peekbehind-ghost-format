@@ -47,14 +47,14 @@ Fields
                     element in basis points (one hundredth of percent)
   9. Relative Left - integer, left position of user activity within parent
                      element in basis points (one hundredth of percent)
- 10. Relative Time - integer, time relative to the start of the recording,
-                     in milliseconds
- 11. Activity Details - any, additional details on the activity which may be
-                        used for more accurate playback. For example, a string
-                        matching the text before the position of the cursor.
-                        May be omitted from the end of the array when not used.
- 12. Specific Custom - any, free field for private use, may be omitted from
-                       the end of the array when not used
+  10. Relative Time - integer, time relative to the start of the recording,
+                      in milliseconds
+  11. Activity Details - any, additional details on the activity which may be
+                         used for more accurate playback. For example, a string
+                         matching the text before the position of the cursor.
+                         May be omitted when last in the array and not used.
+  12. Specific Custom - any, free field for private use, may be omitted from
+                        the end of the array when not used.
 
 Activity Types
 --------------
