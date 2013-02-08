@@ -70,40 +70,40 @@ Examples
 
 This example shows a single ghost record with two levels of nested arrays.
 
+    [
+      0, // private use
+      0,2,0, // records using version 0.1.0 of the data format
+      "#header ul.bio", // ancestor element is a list
       [
-        0, // private use
-        0,2,0, // records using version 0.1.0 of the data format
-        "#header ul.bio", // ancestor element is a list
+        "li[9]/p", // first paragraph in 9th list item of the list
+        0, // mouse move
         [
-          "li[9]/p", // first paragraph in 9th list item of the list
-          0, // mouse move
-          [
-            5000, // 50% top
-            7500, // 75% left
-            500 // 0.5s after start of recording
-          ],
-          [
-            2000, // 20% top
-            5000, // 50% left
-            1000 // 1s after start of recording
-          ]
+          5000, // 50% top
+          7500, // 75% left
+          500 // 0.5s after start of recording
         ],
         [
-          "li[9]/p/a[2]", // second link anchor
-          [
-            0, // mouse move
-            3000, // 30% top
-            4000, // 40% left
-            2000 // 2s after start of recording
-          ],
-          [
-            1, // click
-            3000, // 30% top
-            4000, // 40% left
-            2500 // 2.5s after start of recording
-          ]
+          2000, // 20% top
+          5000, // 50% left
+          1000 // 1s after start of recording
+        ]
+      ],
+      [
+        "li[9]/p/a[2]", // second link anchor
+        [
+          0, // mouse move
+          3000, // 30% top
+          4000, // 40% left
+          2000 // 2s after start of recording
+        ],
+        [
+          1, // click
+          3000, // 30% top
+          4000, // 40% left
+          2500 // 2.5s after start of recording
         ]
       ]
+    ]
 
 Next section
 ------------
