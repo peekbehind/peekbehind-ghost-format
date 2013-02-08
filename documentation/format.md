@@ -9,10 +9,10 @@ For conciseness, records are represented as nested arrays rather than objects
 with named properties. Fields are ordered from the most common (the version of
 the data format) to the most specific (the relative time of the recording).
 
-To avoid repeating values from one record to the next, an intermediate
-array is inserted which holds the common values followed with an array
-for each record that starts with these values. Multiple levels of nesting
-are allowed.
+To avoid repeating values within ghost records from one user activity to the
+next, an intermediate array is inserted which holds the common values followed
+with an array for each user activity that starts with these values. Multiple
+levels of nesting are allowed.
 
 Fields
 ------
