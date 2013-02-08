@@ -19,39 +19,42 @@ levels of nesting are allowed.
 Fields
 ------
 
-  0. General Custom - any, free field for private use,
-                      e.g. 0 to leave the field empty
-  1. Major Version - integer, fixed to 0 in this version.
-                     Positive integers are reserved for this specification
-                     while negative integers are free for private use.
-  2. Minor Version - integer, fixed to 2 in this version.
-                     Positive integers are reserved for this specification
-                     while negative integers are free for private use.
-  3. Patch Version - integer, fixed to 0 in this version.
-                     Positive integers are reserved for this specification
-                     while negative integers are free for private use.
-  4. Ancestor CSS Selector - string, CSS selector for an ancestor element of
-                             recorded user activity, e.g. "#header" or "body"
-  5. Parent XPath - string, XPath, relative to first element matching the above
-                    Ancestor CSS Selector, for the element closest to recorded
-                    user activity, e.g. "table/tbody/tr[3]/td[2]". The ancestor
-                    element itself may be selected using the XPath ".".
-  6. Activity Type - integer, see the list in the section below.
-                     positive integers are reserved for this specification
-                     while negative integers are free for private use,
-                     e.g. use -1 for a custom event.
-  7. Relative Top - integer, top position of user activity within parent
-                    element in basis points (one hundredth of percent)
-  8. Relative Left - integer, left position of user activity within parent
-                     element in basis points (one hundredth of percent)
-  9. Relative Time - integer, time relative to the start of the recording,
-                      in milliseconds
-  10. Activity Details - any, additional details on the activity which may be
-                         used for more accurate playback. For example, a string
-                         matching the text before the position of the cursor.
-                         May be omitted when last in the array and not used.
-  11. Specific Custom - any, free field for private use, may be omitted from
-                        the end of the array when not used.
+     0. General Custom - any, free field for private use,
+                         e.g. 0 to leave the field empty
+     1. Major Version - integer, fixed to 0 in this version.
+                        Positive integers are reserved for this specification
+                        while negative integers are free for private use.
+     2. Minor Version - integer, fixed to 2 in this version.
+                        Positive integers are reserved for this specification
+                        while negative integers are free for private use.
+     3. Patch Version - integer, fixed to 0 in this version.
+                        Positive integers are reserved for this specification
+                        while negative integers are free for private use.
+     4. Ancestor CSS Selector - string, CSS selector for an ancestor
+                                element of recorded user activity,
+                                e.g. "#header" or "body"
+     5. Parent XPath - string, XPath, relative to first element matching the
+                       above Ancestor CSS Selector, for the element closest to
+                       recorded user activity, e.g. "table/tbody/tr[3]/td[2]".
+                       The ancestor element itself may be selected using the
+                       XPath ".".
+     6. Activity Type - integer, see the list in the section below.
+                        positive integers are reserved for this specification
+                        while negative integers are free for private use,
+                        e.g. use -1 for a custom event.
+     7. Relative Top - integer, top position of user activity within parent
+                       element in basis points (one hundredth of percent)
+     8. Relative Left - integer, left position of user activity within parent
+                        element in basis points (one hundredth of percent)
+     9. Relative Time - integer, time relative to the start of the recording,
+                        in milliseconds
+    10. Activity Details - any, additional details on the activity which may be
+                           used for more accurate playback. For example, a
+                           string matching the text before the position of the
+                           cursor. May be omitted when last in the array and
+                           not used.
+    11. Specific Custom - any, free field for private use, may be omitted from
+                          the end of the array when not used.
 
 Activity Types
 --------------
