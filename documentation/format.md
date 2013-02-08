@@ -5,7 +5,8 @@ Each ghost records the activity of a single user in a single page.
 A ghost lists the sequence of user interactions, in chronological order.
 
 After recording, a single ghost recorder is expected to be received.
-For replay, several ghost records are sent together, wrapped in an extra array.
+For replay, up to five ghost records are sent together wrapped in an extra
+array sorted from oldest to newest.
 
 For conciseness, records are represented as nested arrays rather than objects
 with named properties. Fields are ordered from the most common (the version of
