@@ -148,6 +148,43 @@ It is equivalent to the following ghost record with a single level of nesting:
       ]
     ]
 
+The example below shows how five ghost records are grouped together for replay.
+Ghost records are listed separately, even when they start with the same private
+value and version number.
+
+    [
+      // ghost 1 - oldest
+      [
+        0,
+        1,0,0, // version v1.0.0
+        ...
+      ],
+      // ghost 2
+      [
+        0,
+        1,0,0, // version v1.0.0
+        ...
+      ],
+      // ghost 3
+      [
+        0,
+        1,5,0, // version: v1.5.0
+        ...
+      ],
+      // ghost 4
+      [
+        0,
+        1,5,0, // v1.5.0
+        ...
+      ],
+      // ghost 5 - newest
+      [
+        0,
+        2,0,0, // v2.0.0
+        ...
+      ]
+    ]
+
 Next section
 ------------
 
