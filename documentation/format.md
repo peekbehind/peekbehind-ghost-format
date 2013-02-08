@@ -32,12 +32,12 @@ Fields
                         while negative integers are free for private use.
      4. Ancestor CSS Selector - string, CSS selector for an ancestor
                                 element of recorded user activity,
-                                e.g. "#header" or "body"
+                                e.g. "#container" or "body"
      5. Parent XPath - string, XPath, relative to first element matching the
                        above Ancestor CSS Selector, for the element closest to
                        recorded user activity, e.g. "table/tbody/tr[3]/td[2]".
                        The ancestor element itself may be selected using the
-                       XPath ".".
+                       XPath expression ".".
      6. Activity Type - integer, see the list in the section below.
                         positive integers are reserved for this specification
                         while negative integers are free for private use,
