@@ -4,14 +4,9 @@ Extensions
 When defining an extension, take advantage of the fields of the records
 which are partially or completely free for private use.
 
-Custom fields can be used to store any type of value, including objects
-and arrays to group multiple values; to allow this, arrays in custom
-fields are not treated like the start of a nested record.
-
 The General Custom field at the start of each record can be used for properties
-common to one or several ghosts; given its position, it can be shared
-without being repeated, by using nested records starting with one of
-the following fields.
+common to one or several ghosts; it can be shared without being repeated by
+using nested records starting with one of the following fields.
 
 The Specific Custom field at the end of each record on the contrary is better
 used for properties specific to one single user activity, for example

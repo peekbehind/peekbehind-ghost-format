@@ -17,6 +17,12 @@ next, an intermediate array is inserted which holds the common values followed
 with an array for each user activity that starts with these values. Multiple
 levels of nesting are allowed.
 
+Custom fields and Activity Details allow to store any type of value, including
+objects and arrays to group multiple values. To avoid ambiguity, arrays stored
+in these fields are not treated like the start of a nested record and thus
+common values found in these fields are never considered for the introduction
+of an extra level of nesting.
+
 Fields
 ------
 
