@@ -31,10 +31,10 @@ Fields
      1. Major Version - integer, fixed to 0 in this version.
                         Positive integers are reserved for this specification
                         while negative integers are free for private use.
-     2. Minor Version - integer, fixed to 3 in this version.
+     2. Minor Version - integer, fixed to 4 in this version.
                         Positive integers are reserved for this specification
                         while negative integers are free for private use.
-     3. Patch Version - integer, fixed to 1 in this version.
+     3. Patch Version - integer, fixed to 0 in this version.
                         Positive integers are reserved for this specification
                         while negative integers are free for private use.
      4. Ancestor CSS Selector - string, CSS selector for an ancestor
@@ -86,7 +86,7 @@ This example shows a single ghost record with three levels of nested arrays.
 
     [
       0, // private use
-      0,3,1, // v0.3.1 of the data format
+      0,4,0, // v0.4.0 of the data format
       "#header ul.bio", // ancestor element is a list
       [
         "li[9]/p", // first paragraph in 9th list item of the list
@@ -149,7 +149,7 @@ It is equivalent to the following ghost record with a single level of nesting:
 
     [
       0,                // private use
-      0,3,1,            // v0.3.1 of the data format
+      0,4,0,            // v0.4.0 of the data format
       [
         "#header ul.bio", // ancestor element is a list
         "li[9]/p",        // first paragraph in 9th list item of the list
