@@ -76,7 +76,7 @@ This example shows a single ghost record with two levels of nested arrays.
 
     [
       0, // private use
-      0,2,0, // records using version 0.1.0 of the data format
+      0,2,0, // records using version v0.2.0 of the data format
       "#header ul.bio", // ancestor element is a list
       [
         "li[9]/p", // first paragraph in 9th list item of the list
