@@ -98,7 +98,7 @@ This example shows a single ghost record with three levels of nested arrays.
           5000, // 50% left
           [
             3000, // 3s after start of recording
-            5000, // 5000ms - 3000ms = 2s in the same position
+            5000  // 5000ms - 3000ms = 2s in the same position
           ]
         ]
       ],
