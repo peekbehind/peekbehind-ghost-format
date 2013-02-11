@@ -138,75 +138,75 @@ It is equivalent to the following ghost record with a single level of nesting:
       0,3,0,            // v0.3.0 of the data format
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p", // first paragraph in 9th list item of the list
-        0,         // pause in mouse moves
-        5000,      // 50% top
-        7500,      // 75% left
-        0          // start of recording
+        "li[9]/p",        // first paragraph in 9th list item of the list
+        0,                // pause in mouse moves
+        5000,             // 50% top
+        7500,             // 75% left
+        0                 // start of recording
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p", // first paragraph in 9th list item of the list
-        0,         // pause in mouse moves
-        5000,      // 50% top
-        7500,      // 75% left
-        1000       // 1000ms - 0 = 1s in the same position
+        "li[9]/p",        // first paragraph in 9th list item of the list
+        0,                // pause in mouse moves
+        5000,             // 50% top
+        7500,             // 75% left
+        1000              // 1000ms - 0 = 1s in the same position
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p", // first paragraph in 9th list item of the list
-        0,         // pause in mouse moves
-        2000,      // 20% top
-        5000,      // 50% left
-        3000       // 3s after start of recording
+        "li[9]/p",        // first paragraph in 9th list item of the list
+        0,                // pause in mouse moves
+        2000,             // 20% top
+        5000,             // 50% left
+        3000              // 3s after start of recording
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p", // first paragraph in 9th list item of the list
-        0,         // pause in mouse moves
-        2000,      // 20% top
-        5000,      // 50% left
-        5000       // 5000ms - 3000ms = 2s in the same position
+        "li[9]/p",        // first paragraph in 9th list item of the list
+        0,                // pause in mouse moves
+        2000,             // 20% top
+        5000,             // 50% left
+        5000              // 5000ms - 3000ms = 2s in the same position
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p/a[2]", // second link anchor
-        0,              // pause in mouse move
-        3000,           // 30% top
-        4000,           // 40% left
-        8000            // 8s after start of recording
+        "li[9]/p/a[2]",   // second link anchor
+        0,                // pause in mouse move
+        3000,             // 30% top
+        4000,             // 40% left
+        8000              // 8s after start of recording
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p/a[2]", // second link anchor
-        0,              // pause in mouse move
-        3000,           // 30% top
-        4000,           // 40% left
-        10000           // 10000ms - 8000ms = 2s in the same position
+        "li[9]/p/a[2]",   // second link anchor
+        0,                // pause in mouse move
+        3000,             // 30% top
+        4000,             // 40% left
+        10000             // 10000ms - 8000ms = 2s in the same position
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p/a[2]", // second link anchor
-        1,              // click
-        3000,           // 30% top
-        4000,           // 40% left
-        10000           // 10s after start of recording
+        "li[9]/p/a[2]",   // second link anchor
+        1,                // click
+        3000,             // 30% top
+        4000,             // 40% left
+        10000             // 10s after start of recording
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p/a[2]", // second link anchor
-        0,              // pause in mouse move
-        3000,           // 30% top
-        4000,           // 40% left
-        10000           // 10s after start of recording
+        "li[9]/p/a[2]",   // second link anchor
+        0,                // pause in mouse move
+        3000,             // 30% top
+        4000,             // 40% left
+        10000             // 10s after start of recording
       ],
       [
         "#header ul.bio", // ancestor element is a list
-        "li[9]/p/a[2]", // second link anchor
-        0,              // pause in mouse move
-        3000,           // 30% top
-        4000,           // 40% left
-        12000           // 12000ms - 10000ms = 2s in the same position
+        "li[9]/p/a[2]",   // second link anchor
+        0,                // pause in mouse move
+        3000,             // 30% top
+        4000,             // 40% left
+        12000             // 12000ms - 10000ms = 2s in the same position
       ]
     ]
 
