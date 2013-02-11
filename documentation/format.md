@@ -143,7 +143,7 @@ It is equivalent to the following ghost record with a single level of nesting:
 
     [
       0,                // private use
-      0,3,0,            // v0.3.0 of the data format
+      0,3,1,            // v0.3.1 of the data format
       [
         "#header ul.bio", // ancestor element is a list
         "li[9]/p",        // first paragraph in 9th list item of the list
