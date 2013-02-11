@@ -89,7 +89,9 @@ This example shows a single ghost record with three levels of nested arrays.
           5000, // 50% top
           7500, // 75% left
           [
-            0, // start of recording
+            0 // start of recording
+          ],
+          [
             1000 // 1000ms - 0 = 1s in the same position
           ]
         ],
@@ -97,8 +99,10 @@ This example shows a single ghost record with three levels of nested arrays.
           2000, // 20% top
           5000, // 50% left
           [
-            3000, // 3s after start of recording
-            5000  // 5000ms - 3000ms = 2s in the same position
+            3000 // 3s after start of recording
+          ],
+          [
+            5000 // 5000ms - 3000ms = 2s in the same position
           ]
         ]
       ],
@@ -109,7 +113,9 @@ This example shows a single ghost record with three levels of nested arrays.
           3000, // 30% top
           4000, // 40% left
           [
-            8000, // 8s after start of recording
+            8000 // 8s after start of recording
+          ],
+          [
             10000 // 10000ms - 8000ms = 2s in the same position
           ]
         ],
@@ -124,8 +130,10 @@ This example shows a single ghost record with three levels of nested arrays.
           3000, // 30% top
           4000, // 40% left
           [
-            10000, // 10s after start of recording
-            12000  // 12000ms - 10000ms = 2s in the same position
+            10000 // 10s after start of recording
+          ],
+          [
+            12000 // 12000ms - 10000ms = 2s in the same position
           ]
         ]
       ]
