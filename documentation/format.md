@@ -224,15 +224,6 @@ It is equivalent to the following ghost record with a single level of nesting:
       ]
     ]
 
-At the start of recording, a ghost shall contain at least the first fields
-up to the patch version followed with an empty list of records:
-
-    [
-      0,
-      1,0,0, // version v1.0.0
-      [] // empty list of records
-    ]
-
 The example below shows how five ghost records are grouped together for replay.
 Ghost records are listed separately, even when they start with the same private
 value and version number.
