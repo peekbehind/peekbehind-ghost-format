@@ -31,7 +31,7 @@ Fields
      1. Major Version - integer, fixed to 0 in this version.
                         Positive integers are reserved for this specification
                         while negative integers are free for private use.
-     2. Minor Version - integer, fixed to 4 in this version.
+     2. Minor Version - integer, fixed to 5 in this version.
                         Positive integers are reserved for this specification
                         while negative integers are free for private use.
      3. Patch Version - integer, fixed to 0 in this version.
@@ -86,7 +86,7 @@ This example shows a single ghost record with three levels of nested arrays.
 
     [
       0, // private use
-      0,4,0, // v0.4.0 of the data format
+      0,5,0, // v0.5.0 of the data format
       "#header ul.bio", // ancestor element is a list
       [
         "li[9]/p", // first paragraph in 9th list item of the list
@@ -149,7 +149,7 @@ It is equivalent to the following ghost record with a single level of nesting:
 
     [
       0,                // private use
-      0,4,0,            // v0.4.0 of the data format
+      0,5,0,            // v0.5.0 of the data format
       [
         "#header ul.bio", // ancestor element is a list
         "li[9]/p",        // first paragraph in 9th list item of the list
@@ -221,6 +221,25 @@ It is equivalent to the following ghost record with a single level of nesting:
         3000,             // 30% top
         4000,             // 40% left
         12000             // 12000ms - 10000ms = 2s in the same position
+      ]
+    ]
+
+At the start, before any user activity has been recorded, a ghost shall
+contain the first fields up to the patch version:
+
+    [
+      0,
+      1,0,0 // version v1.0.0
+      // no user activity
+    ]
+
+The first recorded activity shall then start nested:
+
+    [
+      0,
+      1,0,0 // version v1.0.0
+      [
+        ... // first user activity
       ]
     ]
 
